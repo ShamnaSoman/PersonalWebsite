@@ -1,0 +1,98 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family:'Poppins' ;
+	background: url("B14.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.wrapper{
+	width: 1170px;
+	margin: auto;
+}
+
+nav{
+	display: inline;
+	width: 50%;
+	margin: auto;
+	padding: 10px 0;
+	margin-left: 50%;
+}
+
+nav ul li{
+	background-color: lightgrey;
+	display: inline-block;
+	border: 1px solid ;
+	list-style: none;
+	margin: 10px 10px;
+	padding: 5px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	padding: 2px 2px;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	background: #ffffe0;
+	border-radius: 5px;
+	color:darkred;
+}
+
+.welcome-text {
+	margin-left: 65%;
+	margin-top: 15%;
+}
+.welcome-text h1 {
+	color: #212121;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+.welcome-text h1 span {
+	color: darkorange;
+}
+.welcome-text p,h2{
+	line-height: 22px;
+	font-size: 20px;
+}
+.welcome-text a {
+	background: #212121;
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+
+.image{
+	width: 20%;
+	height: 40%;
+	position: absolute;
+	bottom: 43%;
+	right: 15%;
+}
+
+.image img{
+	height: 290px;
+	width: 290px;
+	position: absolute;
+	left: 40%;
+	bottom: 0;
+}

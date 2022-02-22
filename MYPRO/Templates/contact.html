@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Me</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			margin-top: 40px;
+			margin-left: 40px;
+			background-image: url("{% static 'B1.jpg' %}");
+			background-position: right top;
+			background-size: cover;
+		}
+		h5{
+			margin-top: 20px;
+			color:dimgray;
+		}
+		img{
+			height: 50px;
+			width: 50px;
+		}
+		.img1{
+			margin-left: 300px;
+			margin-top: 100px;
+		}
+		.img2{
+			margin-left:200px ;
+		}
+		.img3{
+			margin-left: 200px;
+		}
+		span{
+			margin-left: 155px;
+		}
+		.P1{
+			margin-left: 275px;
+			color: gray;
+		}
+		.P2{
+			margin-left: 265px;
+		}
+		.S1{
+			margin-left: 120px;
+		}
+		.S2{
+			margin-left: 95px;
+		}
+				a{
+			background-color: black;
+			border: 1px solid ;
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+			padding: 10px 25px;
+		}
+		a:hover{
+			color: blue;
+			text-decoration: underline;
+			background-color: lightgrey;
+		}
+
+	</style>
+</head>
+<body>
+	<a href="{% url 'home' %}">Back to Home</a>
+	<br><br><br><br>
+	<h5>LETS GET IN TOUCH</h5>
+	<h1>Contact Me</h1>
+	<div>
+		<img class="img1" src="{% static 'mob.jpg' %}">
+		<img class="img2" src="{% static 'mail1.jpg' %}">
+		<img class="img3" src="{% static 'pin1.png' %}">
+		<p class="P1">Give me a call<span >Send me an Email</span><span >Visit me at</span></p>
+		<br>
+	</div>
+
+	<div>
+		<p class="P2">+91-9633079984<span class="S1">shamna.soman@gmail.com</span><span class="S2">Vadakara,Calicut,Kerala</span></p>
+	</div>
+
+</body>
+</html>

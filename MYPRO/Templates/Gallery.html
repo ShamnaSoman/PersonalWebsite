@@ -1,0 +1,81 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <style>
+    *{
+        margin : 0;
+        padding : 0;
+    }
+
+    body{
+        background-color: lightgray;
+    }
+
+    div.gallery {
+        margin :5px;
+        border :2px solid black;
+        float : left;
+        width : 160px;
+        background-color : black;
+    }
+     div.gallery:hover{
+        border :1px solid grey;
+    }
+    div.gallery div{
+        padding : 15px;
+        text-align: center;
+        color : white;
+    }
+    img{
+        width : 100%;
+        height : auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Photo Gallery</h1>
+    <div class="gallery">
+        <img src="{% static 'img7.jpeg'%}" width="600" height="400">
+        <div>Myself</div>
+    </div>
+
+    <div class="gallery">
+        <img src="{% static 'img6.jpeg'%}" width="600" height="400">
+        <div>Craft</div>
+    </div>
+
+    <div class="gallery">
+        <img src="{% static 'img2.jpeg'%}" width="600" height="400">
+        <div>Nature</div>
+    </div>
+
+    <div class="gallery">
+        <img src="{% static 'img3.jpeg'%}" width="600" height="400">
+        <div>Kids</div>
+    </div>
+
+    <div class="gallery">
+        <img src="{% static 'img4.jpeg'%}" width="600" height="400">
+        <div>Kids</div>
+    </div>
+
+    <div class="gallery">
+        <img src="{% static 'img5.jpeg'%}" width="600" height="400">
+        <div>Kids</div>
+    </div>
+
+    <div class="gallery">
+        <img src="{% static 'img13.jpeg'%}" width="800" height="400">
+        <div>Family</div>
+    </div>
+
+    <div class="gallery">
+        <img src="{% static 'img12.jpeg'%}" width="800" height="400">
+        <div>Family</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Me</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			background-image: url("{% static 'B6.jpg' %}");
+ 		 	background-attachment: fixed;
+  			background-size: cover;
+  			background-position: right;
+		}
+		a{
+			margin-left:20px;
+			background-color: black;
+			border: 1px solid ;
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+			padding: 10px ;
+		}
+		a:hover{
+			color: green;
+			text-decoration: underline;
+			background-color: lightgrey;
+		}
+		.div1{
+			margin-left: 750px;
+		}
+		h1{
+			text-transform: capitalize;
+			margin-top: 60px;
+			color: white;
+		}
+		img{
+			height: 75px;
+			width: 75px ;
+		}
+		p{
+			color: white;
+		}
+		.img1{
+			margin-left: 750px;
+		}
+
+	</style>
+</head>
+<body>
+	<a href="{% url 'home' %}">Back to Home</a>
+	<div class="div1">
+		<h1><b>ABOUT ME</b></h1>
+		<p>My name is SHAMNA SOMAN.I'm passionate about coding.I have 5 years experience in IT industry.
+		I am organized ,patient ,attentive and caring.
+		I'm a mother of two lovely kids.I love cooking, baking and doing crafts.
+		</p>
+		<p>I was a IBM iseries developer with 4 years experience as a developer.Now I am
+			undergoing training in Python and Django for upskilling.
+		</p>
+		<p>I completed B-Tech in Electronics and Communication Engineering in 2010.I
+			started my career as a fresher in CTS Chennai in 2010.In 2015 I resigned from Mindtree
+			Banglore as Senior Software Developer .</p>
+	</div>
+	<br>
+	<div class="img1">
+		<img src="{% static 'django.jpg' %}">
+		<img src="{% static 'AS400.jpg' %}">
+		<img src="{% static 'python.jpg' %}">
+	</div>
+</body>
+</html>

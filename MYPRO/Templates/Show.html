@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+    <style>
+        table,tr,th,td {
+			border: 1px solid black;
+		}
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <td>User Email</td>
+            <td>User Name</td>
+        </thead>
+        <tbody>
+        {% for user in users %}
+        <tr>
+            <td>{{user.Email}}</td>
+            <td>{{user.Name}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>
